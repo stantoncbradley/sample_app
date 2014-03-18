@@ -22,6 +22,6 @@ def secure_token
 		File.write(token_file, token)
 		token
 	end
-endf
+end
 
 SampleApp:Application.config.secret_key_base = secure_token
